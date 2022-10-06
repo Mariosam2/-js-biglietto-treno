@@ -2,19 +2,17 @@ const ticketPrice = document.getElementById("ticket_price");
 let  km = Number(prompt("Inserisca i chilometri che vuole percorrere"));
 while(true) {
     if(km){
-        console.log(km);
         break;
     } 
-    km = Number(prompt("Inserisca i chilometri che vuole percorrere"));
+    km = Number(prompt("La distanza deve essere un numero"));
     
 }
 let userAge = Number(prompt("Inserisca la sua età"));
 while(true) {
     if(userAge){
-        console.log(userAge);
         break;
     } 
-    userAge = Number(prompt("Inserisca la sua età"));
+    userAge = Number(prompt("L'età deve essere un numero"));
     
 }
 let price = km * 0.21;
