@@ -32,5 +32,7 @@ if(userAge > overAge) {
     discount = (price/100) * overAgeDiscount;
     price = price - discount;
 }
+
+price.toFixed(2);
 price.toString();
 ticketPrice.innerHTML = `Il suo biglietto costa: ${price}€`;
