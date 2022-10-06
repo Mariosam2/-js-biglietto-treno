@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* #region columns */
+.col-7 {
+    position: relative;
+    width: calc((100%/12)*7);
+    margin: 0 auto;
+    height: 200px;
+    
+}
+/* #endregion */
+
+/* #region main */
+#site_main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#ticket_price {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+/* #endregion */
