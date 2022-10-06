@@ -5,18 +5,18 @@ const userAge = Number(prompt("Inserisca la sua età"));
 let price = km * 0.21;
 const underAge = 18;
 const overAge = 65;
-const underAgeDiscount = (price/100) * 20;
-const overAgeDiscount = (price/100) * 40;
+const underAgeDiscount = 20;
+const overAgeDiscount = 40;
 
 if (userAge <  underAge) {
     let discountedPrice;
-    discountedPrice = price - underAgeDiscount;
+    discountedPrice = (price/100) * underAgeDiscount;
     price = discountedPrice;
 } 
 
 if(userAge > overAge) {
     let discountedPrice;
-    discountedPrice = price - overAgeDiscount;
+    discountedPrice = (price/100) * overAgeDiscount;
     price = discountedPrice;
 }
 price.toString();
